@@ -4,6 +4,8 @@ import cv2
 def rescale(img,scale=0.5):
     img=cv2.resize(img,(int(img.shape[1]*scale),int(img.shape[0]*scale)),interpolation=cv2.INTER_AREA)
     return img
+def empty(a):
+    pass
 
 def preProcessing(img):
     """
